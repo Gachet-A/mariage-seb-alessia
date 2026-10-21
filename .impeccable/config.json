@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T15:20:01.249Z",
+        "reason": "Claude triage: .sec and .ticket padding is set in styles.css (clamp gutters, 1.75-3rem); rendered screenshots at 390 and 1440 show text inset, static HTML scan can't see it"
+      }
+    ]
+  }
+}

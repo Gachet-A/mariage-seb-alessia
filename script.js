@@ -140,8 +140,6 @@ function openFromHash() {
   const target = document.getElementById(id);
   if (target?.tagName === "DETAILS") {
     target.open = true;
-    document.querySelectorAll(".faq details.is-target").forEach((d) => d.classList.remove("is-target"));
-    target.classList.add("is-target");
   }
 }
 window.addEventListener("hashchange", openFromHash);

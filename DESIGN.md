@@ -1,6 +1,6 @@
 # Design — « Programme de salle »
 
-A contemporary Swiss theatre house programme for a wedding in Dürrenmatt's hometown: cast of two, two acts, one castle. Single static page; tokens live at the top of `styles.css`.
+An elegant single-page wedding invitation: script names and titles over a clean sans, in the original site's warm palette. Single static page; tokens live at the top of `styles.css`.
 
 ## Colour (the original site's palette; light fields own whole sections)
 
@@ -9,7 +9,8 @@ A contemporary Swiss theatre house programme for a wedding in Dürrenmatt's home
 | `--paper` | `#f7f3f3` | Page ground, masthead: cover, Hébergement, notes, FAQ |
 | `--card` | `#ffffff` | The RSVP ticket |
 | `--greige` | `#cec8c3` | Lieu, Réponse |
-| `--caramel` | `#d2996c` | Déroulement, Annonces, colophon, and every primary button (ink text) |
+| `--caramel` | `#d2996c` | Footer, and every primary button (ink text) |
+| `--sun` | `#f6e18a` | Programme (Déroulement) background, chosen by the couple |
 | `--caramel-hover` | `#c5885a` | Button hover |
 | `--ink` | `#191009` | All text (deep brown) |
 | `--ink-soft` | `#5e4c3e` | Secondary text on paper/greige |
@@ -19,9 +20,9 @@ Sections alternate paper / greige / caramel; caramel text accents are never used
 
 ## Type
 
-- **Archivo** (self-hosted variable, `wdth` 62–125): billing and headings in caps. Names at `font-stretch: 62%`, weight 800; section titles (`.h-display`) at 68%, weight 750, line-height 1; UI labels at 80–90%.
-- **Spectral**: prose (400, 1.6 leading, 62ch measure); italic 300 for stage directions (`.didascalie`, ampersand, "Acte I/II", dress-code line).
-- Times use tabular numerals.
+- **Pinyon Script** (self-hosted, OFL): names, section titles, monogram, day names (Samedi / Dimanche), "Merci !". Free stand-in for Vladimir Script, which the couple asked for but which can't be licensed for the web. Never uppercase.
+- **Dubai** (self-hosted Latin subset, 300/400/500/700): all other text, including nav, labels, buttons, times. Body 19–22px, line-height 1.6.
+- Running text (`.prose`, photographer note) is justified with automatic French hyphenation.
 
 ## Components
 

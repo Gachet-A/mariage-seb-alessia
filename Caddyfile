@@ -6,12 +6,6 @@
 	root * /srv
 	encode zstd gzip
 
-	# /vert = same page, green palette (theme picked from the URL in index.html)
-	redir /vert/ /vert
-	rewrite /vert /index.html
-	# /choix = both versions side by side
-	rewrite /choix /choix.html
-
 	file_server
 
 	# Fonts and photos never change name-for-content; cache them for a week.

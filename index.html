@@ -7,21 +7,12 @@
   <meta name="description" content="Mariage d’Alessia et Sébastien, les 29 et 30 mai 2027 à l’Hôtel Schloss Hünigen, Konolfingen.">
   <meta name="theme-color" content="#f7f3f3">
   <link rel="icon" href="images/favicon.ico">
-  <link rel="preload" href="fonts/archivo-normal-100-900-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/pinyon-script.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/dubai-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" as="image" href="images/hero-1600.webp" imagesrcset="images/hero-800.webp 800w, images/hero-1600.webp 1600w" imagesizes="(min-width: 960px) 45vw, 100vw">
   <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="styles.css">
-  <script>
-    (function () {
-      var d = document.documentElement;
-      d.classList.add('js');
-      // Variante de couleurs : /vert (ou ?theme=vert en local)
-      if (/^\/vert\/?$/.test(location.pathname) || /[?&]theme=vert\b/.test(location.search)) {
-        d.dataset.theme = 'vert';
-        document.querySelector('meta[name="theme-color"]').content = '#dccaa8';
-      }
-    })();
-  </script>
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
   <a class="skip" href="#contenu">Aller au contenu</a>
@@ -50,10 +41,7 @@
           <span class="billing-line billing-amp"><span>&amp;</span></span>
           <span class="billing-line"><span>Sébastien</span></span>
         </h1>
-        <div class="bill-meta">
-          <p class="bill-date"><time datetime="2027-05-29">29 et 30 mai 2027</time></p>
-          <p class="bill-place">Hôtel Schloss Hünigen</p>
-        </div>
+        <p class="bill-invite">Nous avons le plaisir de vous inviter à notre mariage qui aura lieu les <time datetime="2027-05-29">29 et 30 mai 2027</time> à l'hôtel Schloss Hünigen</p>
         <a class="stub" href="#reponse">
           <span>Répondre</span>
           <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square"/></svg>
@@ -67,10 +55,11 @@
     <!-- Lieu -->
     <section class="sec sec--greige lieu" id="lieu" aria-labelledby="lieu-titre">
       <div class="lieu-text">
-        <h2 id="lieu-titre" class="h-display">Hôtel Schloss Hünigen</h2>
+        <h2 id="lieu-titre" class="h-display">Lieu</h2>
+        <p class="h-sub">Hôtel Schloss Hünigen</p>
         <ul class="ruled">
           <li><strong>Freimettigenstrasse 9, 3510 Konolfingen</strong></li>
-          <li><a href="#faq-place">Parking </a>devant l’hôtel</li>
+          <li><a href="#faq-acces">Parking</a> devant l’hôtel</li>
           <li>Possibilité de venir en train&nbsp;: arrêt <strong>Stalden i.E.</strong></li>
         </ul>
       </div>
@@ -81,22 +70,24 @@
 
     <!-- Hébergement -->
     <section class="sec sec--paper hebergement" id="hebergement" aria-labelledby="heb-titre">
-      <h2 id="heb-titre" class="h-display">Hébergement</h2>
+      <div class="heb-head">
+        <h2 id="heb-titre" class="h-display">Hébergement</h2>
+        <p class="h-sub">Hôtel Schloss Hünigen</p>
+      </div>
       <figure class="heb-photo">
         <img src="images/chateau-parc-1200.webp" srcset="images/chateau-parc-800.webp 800w, images/chateau-parc-1200.webp 1200w" sizes="(min-width: 960px) 60vw, 100vw" width="1200" height="800" alt="Le château et sa terrasse côté parc, sous les arbres." loading="lazy">
       </figure>
       <div class="prose heb-text">
         <p>Nous aimons beaucoup l’idée de passer ce weekend particulier tous ensemble dans cette grande "maison". Nous vous invitons donc chaleureusement à passer la nuit avec nous au château.</p>
         <p>Une chambre est pré-réservée pour vous sur place. Il est possible de rajouter jusqu’à 2 lits enfants dans une chambre.</p>
-        <p>Le prix est d’environ 200.- CHF pour une chambre double, à régler directement à la réception de l’hôtel.</p>
-        <p>Nous avons conscience qu’il s’agit d’une somme conséquente. Nous tenons à vous dire que nous préférons largement que vous vous absteniez d’offrir un cadeau et que vous restiez dormir, plutôt que le contraire.&nbsp;Votre présence à nos côtés est ce qui nous fait le plus plaisir.</p>
+        <p>Le prix est de 200.- CHF pour une chambre double et 150.- CHF pour une chambre simple, à régler directement à la réception de l'hôtel.</p>
+        <p>Nous avons conscience qu’il s’agit d’une somme conséquente. Nous tenons à vous dire que nous préférons largement que vous vous absteniez d’offrir un cadeau et que vous restiez dormir, plutôt que le contraire. Votre présence à nos côtés est ce qui compte le plus pour nous.</p>
         <p>Nous nous chargeons des réservations des chambres, merci de nous indiquer vos besoins via ce <a href="#reponse">formulaire</a>.</p>
-        <p>L’hôtel est par ailleurs équipé d’un spa, vous pouvez donc prendre votre maillot pour en profiter.</p>
       </div>
     </section>
 
     <!-- Déroulement -->
-    <section class="sec sec--caramel deroulement" id="deroulement" aria-labelledby="der-titre">
+    <section class="sec sec--sun deroulement" id="deroulement" aria-labelledby="der-titre">
       <figure class="der-photo">
         <img src="images/deroulement-1600.webp" srcset="images/deroulement-800.webp 800w, images/deroulement-1600.webp 1600w" sizes="(min-width: 960px) 45vw, 100vw" width="1600" height="1504" alt="Alessia et Sébastien assis dans les hautes herbes d’un pré." loading="lazy">
       </figure>
@@ -104,20 +95,20 @@
         <h2 id="der-titre" class="h-display">Déroulement de l'événement</h2>
 
         <div class="act">
-          <h3 class="act-title"><span class="act-no">Acte I</span> 29 mai</h3>
+          <h3 class="act-title"><span class="act-no">Samedi</span> 29 mai</h3>
           <ol class="cues">
             <li><time>13h30</time><span>Arrivée des invités, installation dans les chambres</span></li>
             <li><time>14h00</time><span>Verre de bienvenue sur la <a href="#faq-place">petite place en gravier devant l’hôtel, côté parc</a></span></li>
             <li><time>15h00</time><span>Cérémonie</span></li>
             <li><time>16h00</time><span>Photos de groupe</span></li>
-            <li><time>16h30</time><span>Apéritif</span></li>
+            <li><time>16h30</time><span>Vin d'honneur</span></li>
             <li><time>19h00</time><span>Repas</span></li>
             <li><time>00h00</time><span>Soirée</span></li>
           </ol>
         </div>
 
         <div class="act">
-          <h3 class="act-title"><span class="act-no">Acte II</span> 30 mai</h3>
+          <h3 class="act-title"><span class="act-no">Dimanche</span> 30 mai</h3>
           <ol class="cues">
             <li><time>10h00</time><span>Brunch</span></li>
           </ol>
@@ -127,10 +118,10 @@
 
     <!-- Didascalie + dress code -->
     <section class="sec sec--paper notes" aria-label="Photographe et dress code">
-      <p class="didascalie"><i>Nous aurons un photographe pour immortaliser cette journée. Comme vous aurez accès à toutes les photos, nous vous invitons à laisser vos téléphones pour profiter pleinement des moments clés (arrivée des marié.e.s, cérémonie et photos de groupes).</i></p>
+      <p class="didascalie">Nous aurons un photographe pour immortaliser cette journée. Comme vous aurez accès à toutes les photos, nous vous invitons à laisser vos téléphones pour profiter pleinement des moments clés (arrivée des marié.e.s, cérémonie et photos de groupes).</p>
       <div class="dress" id="dress-code">
         <h2 class="h-display">Dress code</h2>
-        <p class="dress-text">Nous vous invitons à porter...</p>
+        <p class="dress-text">Nous vous invitons à porter une touche de couleur</p>
       </div>
     </section>
 
@@ -260,10 +251,9 @@
         <details id="faq-place">
           <summary><span>Où est la petite place en gravier devant l'hôtel, côté parc, où à lieu le rendez-vous à 14h ?</span><i class="pm" aria-hidden="true"></i></summary>
           <div class="faq-body prose">
-            <p>C'est là</p>
+            <p>Elle est au niveau de l'entrée Sud de l'hôtel, où se situe la réception. Si vous arrivez par le parking vous passerez par l'entrée Nord et vous devrez traverser l'hôtel pour ressortir côté parc. Voici des images pour vous aider. P&nbsp;: parking, E&nbsp;: entrée Nord, R&nbsp;: réception, point rouge&nbsp;: lieu de rendez-vous</p>
+            <img src="images/plan-place-1600.webp" srcset="images/plan-place-800.webp 800w, images/plan-place-1600.webp 1600w" sizes="(min-width: 960px) 640px, 100vw" width="1600" height="1262" alt="Plan de l’hôtel : P parking, E entrée Nord, R réception, point rouge lieu de rendez-vous." loading="lazy">
             <img src="images/place-gravier-1600.webp" srcset="images/place-gravier-800.webp 800w, images/place-gravier-1600.webp 1600w" sizes="(min-width: 960px) 640px, 100vw" width="1600" height="1200" alt="La petite place en gravier devant l’hôtel, côté parc." loading="lazy">
-            <hr>
-            <img src="images/localisation-place-1600.webp" srcset="images/localisation-place-800.webp 800w, images/localisation-place-1600.webp 1600w" sizes="(min-width: 960px) 640px, 100vw" width="1600" height="1262" alt="Localisation de la place en gravier sur le plan du château." loading="lazy">
           </div>
         </details>
         <details id="faq-vieille-dame">
@@ -274,16 +264,12 @@
         </details>
       </div>
     </section>
-
-    <!-- Annonces -->
-    <section class="sec sec--caramel annonces" id="annonces" aria-label="Annonces">
-      <p class="annonce">Nous publierons des annonces de dernière minute ici.</p>
-    </section>
   </main>
 
   <footer class="colophon">
-    <span>Alessia &amp; Sébastien</span>
-    <span>29 et 30 mai 2027 · Hôtel Schloss Hünigen</span>
+    <p class="colophon-names">Alessia &amp; Sébastien</p>
+    <p>29 et 30 mai 2027 · Hôtel Schloss Hünigen</p>
+    <p><a href="mailto:alessia-sebastien@protonmail.com">alessia-sebastien@protonmail.com</a></p>
   </footer>
 
   <script src="script.js" defer></script>
