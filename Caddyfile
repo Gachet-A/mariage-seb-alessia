@@ -8,12 +8,14 @@
 
 	file_server
 
-	# Fonts and photos never change name-for-content; cache them for a week.
-	@assets path /fonts/* /images/*
+	# Font and image files: cache for a week (new versions get new file names).
+	@assets path *.woff2 *.webp *.ico
 	header @assets Cache-Control "public, max-age=604800"
+	@woff2 path *.woff2
+	header @woff2 Content-Type font/woff2
 
-	# HTML, CSS and JS: always revalidate so edits show up right away.
-	@pages not path /fonts/* /images/*
+	# HTML, CSS and JS (including fonts/fonts.css): always revalidate so edits show up right away.
+	@pages not path *.woff2 *.webp *.ico
 	header @pages Cache-Control "no-cache"
 
 	header {
