@@ -1,5 +1,5 @@
 // Web3Forms access key: create one for alessia-sebastien@protonmail.com at https://web3forms.com
-const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE";
+const WEB3FORMS_ACCESS_KEY = "c1307065-8af1-478e-afb9-e882a0cc94b7";
 const CONTACT_EMAIL = "alessia-sebastien@protonmail.com";
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");

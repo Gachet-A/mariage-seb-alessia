@@ -1,0 +1,8 @@
+{
+  "name": "mariage-seb-alessia",
+  "private": true,
+  "description": "Static wedding site. No build step; Railway deploys it with the Dockerfile.",
+  "scripts": {
+    "dev": "npx --yes serve@14.2.4 . -l 5173 --no-clipboard"
+  }
+}
